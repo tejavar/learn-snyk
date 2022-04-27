@@ -1,14 +1,14 @@
-provider "google" {
+provider "aws" {
   region = var.region
 
   default_tags {
     tags = {
-      hashicorp-learn = "learn-run-tasks-snyk"
+      hashicorp-learn = "cloud-run-tasks-snyk"
     }
   }
 }
 
-resource "google_cloud_identity_groups" "allow_ssh" {
+resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow SSH inbound from anywhere"
 
