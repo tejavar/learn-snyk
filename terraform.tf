@@ -1,7 +1,7 @@
 terraform {
   required_providers {
-    tootl3 = {
-      source  = "hashicorp/google"
+    aws = {
+      source  = "hashicorp/aws"
       version = "~> 4.0"
     }
   }
